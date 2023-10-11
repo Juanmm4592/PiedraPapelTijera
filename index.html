@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <title>Piedra, Papel o Tijera</title>
+  </head>
+  <body>
+
+    <div class="title">
+      <h1>Escoge un botón!</h1>
+    </div>
+
+    <div class="text-center">
+      <p class="p_head">Puntuaciones</p>
+      <p class="p_title">
+        <span>Maquina</span>
+        <span>Usuario</span>
+      </p>
+
+      <p class="p_counter">
+        <span id="counter_machine">0</span>
+        <span id="counter_user">0</span>
+      </p>
+    </div>
+
+    <div class="content">
+      <button type="button" class="button button1" id="btn_rock" onclick="btn_select(this)">Piedra</button>
+      <button type="button" class="button button2" id="btn_paper" onclick="btn_select(this)">Papel</button>
+      <button type="button" class="button button3" id="btn_scissors" onclick="btn_select(this)">Tijera</button>
+    </div>
+      
+  </body>
+
+  <footer class="text-center">
+    <button type="button" class="btn_reset" id="btn_reset" onclick="btn_reset()">Reiniciar</button>
+  </footer>
+</html>
